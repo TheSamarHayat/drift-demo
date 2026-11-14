@@ -11,7 +11,7 @@ export function LoaderView({ progress }: { progress: number }) {
         />
       </div>
       <span className="font-mono text-xs tracking-[0.12em] text-cyan">
-        {String(Math.round(progress)).padStart(3, "0")}%
+        {Math.round(progress)}%
       </span>
     </div>
   );
